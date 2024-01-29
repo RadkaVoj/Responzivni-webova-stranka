@@ -1,0 +1,450 @@
+:root {
+  --navigation-color: #33292a;
+  --text-color: #fff;
+  --back-color: #33292a;
+  --back2-color: #644b4f;
+  --back3-color: #333333;
+  --back4-color: #f2f2f2;
+  --ref-color: #efa69d;
+  --hover-color: #e9877b;
+  --narrow-screen: 60%;
+  --wide-screen: 90%;
+  --right-margin: 20%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  padding: 16px 0;
+  margin-bottom: 10px;
+  font-size: 32px;
+  font-weight: 700;
+}
+h2 {
+  margin: 16px 0;
+  font-size: 24px;
+  font-weight: 700;
+}
+h3 {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 0 2px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+h4 {
+  font-size: 14px;
+  font-weight: 700;
+  margin: -30px;
+}
+p {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 8px 0;
+}
+
+header div {
+  font-size: 42px;
+  font-weight: 700;
+}
+@media (min-width: 576px) {
+  header div {
+    font-size: 96px;
+    font-weight: 700;
+  }
+}
+@media (max-width: 800px) {
+  h3 {
+    font-size: 14px;
+    font-weight: 700;
+  }
+}
+/* NAVIGATION SECTION */
+nav {
+  background-color: var(--navigation-color);
+  position: relative;
+}
+.nav-container {
+  width: var(--narrow-screen);
+  margin: 0 auto;
+  height: 67px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+nav li {
+  margin: 4px 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+  text-align: left;
+}
+.icon {
+  display: none;
+  font-size: 40px;
+}
+
+@media (max-width: 576px) {
+  .nav-container {
+    width: var(--wide-screen);
+    height: 67px;
+  }
+  nav .icon {
+    display: block;
+    color: var(--text-color);
+    text-align: right;
+    padding: 10px 0;
+  }
+
+  nav ul {
+    display: none;
+  }
+}
+/* HERO SECTION */
+header {
+  color: var(--text-color);
+  font-size: 40px;
+  font-weight: 700;
+  text-align: right;
+  position: absolute;
+  bottom: 15%;
+  right: 5%;
+}
+.hero-section {
+  height: 780px;
+  background-image: url("/images/scott-goodwill-y8Ngwq34_Ak-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+@media (min-width: 576px) {
+  .hero-section {
+    height: 804px;
+  }
+  header {
+    font-size: 42px;
+    bottom: 10%;
+    right: var(--right-margin);
+  }
+}
+/* ABOUT US SECTION */
+.About-us-container {
+  margin: 50px auto;
+}
+.About-us-article {
+  width: var(--wide-screen);
+  margin: 0 auto;
+}
+.About-us-container img {
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.article-img {
+  margin-top: 20px;
+}
+@media (min-width: 576px) {
+  .About-us-container {
+    width: var(--narrow-screen);
+    margin: 80px auto;
+  }
+  .About-us-article {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .article-text {
+    width: 50%;
+  }
+  .article-img {
+    max-width: 50%;
+  }
+  .article-img img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+/* WHAT WE DO SECTION */
+.What-we-do-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--navigation-color);
+  color: var(--text-color);
+  margin: 64px 0;
+}
+.What-we-do-content {
+  width: var(--wide-screen);
+  text-align: center;
+  justify-content: center;
+}
+.What-we-do-text {
+  width: 100%;
+  text-align: center;
+  margin-top: 40px;
+}
+.What-we-do-icons {
+  padding: 20px 0;
+}
+.hiking-symbol {
+  background-image: url("\icons\png-icons-white\hiking-white.png");
+  background-size: contain;
+}
+.What-we-do-icons div {
+  padding: 20px 0;
+}
+.What-we-do-icons img {
+  width: 80px;
+  height: 80px;
+  align-items: center;
+}
+@media (min-width: 576px) {
+  .What-we-do-container {
+    height: 591px;
+  }
+  .What-we-do-content {
+    width: var(--narrow-screen);
+    padding: 30px auto;
+  }
+  .What-we-do-text {
+    width: 100%;
+  }
+  .What-we-do-icons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 50px;
+  }
+  .What-we-do-icons img {
+    width: 50px;
+    height: 50px;
+    align-items: center;
+  }
+  .What-we-do-icons div {
+    font-size: 30px;
+  }
+}
+/* OUR TRIP SECTION */
+.Our-trip-container {
+  width: var(--wide-screen);
+  margin: 32px auto;
+}
+.Our-trip-card {
+  border-radius: 5px;
+  object-fit: cover;
+  text-align: center;
+  min-height: 80px;
+  margin: 2px auto;
+}
+.Our-trip-card h2 {
+  padding: 20px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 576px) {
+  .Our-trip-container {
+    width: var(--narrow-screen);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    gap: 16px;
+    margin: 100px auto;
+  }
+  .Our-trip-card {
+    display: flex;
+    flex: 1 1 calc(100% / 3 - 16px);
+    overflow: hidden;
+    max-height: 250px;
+    height: 220px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+/* WHERE DO YOU SECTION */
+.Where-do-you-container {
+  background-color: var(--back2-color);
+  height: 530px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+}
+
+.Where-do-you-content {
+  width: var(--wide-screen);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: var(--text-color);
+  margin: 3rem auto;
+}
+.box2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.box2 a {
+  font-weight: 700;
+  font-size: 14px;
+  border: 0px solid var(--back3-color);
+  color: var(--navigation-color);
+  background-color: var(--back4-color);
+  border-radius: 4px;
+  margin-top: 80px;
+  padding: 12px 2px;
+  width: 150px;
+  height: 43px;
+}
+a span {
+  margin: 32px;
+}
+
+@media (min-width: 576px) {
+  .Where-do-you-container {
+    height: 400px;
+    margin: 80px auto;
+  }
+  .Where-do-you-content {
+    width: var(--narrow-screen);
+    height: 200px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    color: var(--text-color);
+    gap: 10px;
+    margin: 80px auto;
+  }
+  .box1 {
+    width: calc(100% / 3 - 40px);
+  }
+  .box2 {
+    width: calc(100% / 3 * 2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .box2 a {
+    background-color: var(--back4-color);
+    border-radius: 4px;
+    margin-top: 30px;
+    padding: 12px 0px;
+    width: 140px;
+  }
+}
+/* REVIEWS SECTION */
+.Reviews-container {
+  width: var(--wide-screen);
+  margin: 100px auto;
+}
+.first-text {
+  margin-top: 50px;
+  text-align: center;
+}
+.Reviews-article {
+  margin-top: 4rem;
+  text-align: center;
+}
+.img-text p {
+  margin: 40px auto;
+}
+.circle-img img {
+  width: 111px;
+  height: 111px;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: 20px;
+  object-fit: cover;
+}
+
+@media (min-width: 576px) {
+  .Reviews-container {
+    width: var(--narrow-screen);
+    margin: 0 auto;
+  }
+  .Reviews-article {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 30px auto;
+    width: 100%;
+    box-sizing: border-box;
+    gap: 30px;
+    justify-content: space-between;
+  }
+  .first-text {
+    align-self: flex-start;
+    width: 50%;
+    margin: 30px auto;
+  }
+  .img-text {
+    margin: 0 auto;
+    width: calc(100% / 2 - 30px);
+  }
+}
+/* END SECTION */
+.img-box {
+  object-fit: cover;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0 0;
+  max-height: 420px;
+}
+.end-section {
+  margin: 5rem 0 0 0;
+}
+.end-section img {
+  width: 100%;
+  height: 100%;
+  vertical-align: top;
+}
+@media (min-width: 576px) {
+  .end-section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .end-section img {
+    width: calc(50%);
+  }
+}
+/* FOOTER SECTION */
+.footer-section {
+  background-color: var(--back3-color);
+  color: var(--text-color);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+.footer-section a {
+  padding: 4px 4px;
+  color: var(--ref-color);
+  text-decoration: underline;
+  font-weight: bold;
+}
