@@ -203,10 +203,6 @@ header {
 .What-we-do-icons {
   padding: 20px 0;
 }
-.hiking-symbol {
-  background-image: url("\icons\png-icons-white\hiking-white.png");
-  background-size: contain;
-}
 .What-we-do-icons div {
   padding: 20px 0;
 }
@@ -223,22 +219,11 @@ header {
     width: var(--narrow-screen);
     padding: 30px auto;
   }
-  .What-we-do-text {
-    width: 100%;
-  }
   .What-we-do-icons {
     display: flex;
     justify-content: space-between;
     width: 100%;
     padding-top: 50px;
-  }
-  .What-we-do-icons img {
-    width: 50px;
-    height: 50px;
-    align-items: center;
-  }
-  .What-we-do-icons div {
-    font-size: 30px;
   }
 }
 /* OUR TRIP SECTION */
