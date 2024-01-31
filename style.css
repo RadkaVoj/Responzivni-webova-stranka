@@ -300,14 +300,11 @@ img {
   background-color: var(--back4-color);
   border-radius: 4px;
   margin-top: 80px;
-  padding: 12px 2px;
-  width: 150px;
+  padding: 12px 0px;
+  width: 133px;
   height: 43px;
+  text-align: center;
 }
-a span {
-  margin: 32px;
-}
-
 @media (min-width: 576px) {
   .Where-do-you-container {
     height: 400px;
